@@ -1,0 +1,65 @@
+In this assignment you will do image classification using CNNs.
+
+This assignment could take significant computational time to run, so please start working on this early and avoid last minute submission.
+
+Set up:
+
+1. Please go over the posted A4.pptx slides and make sure that you understand and can run all the code.
+
+2. Download the "6 Human Emotions for Image Classification" dataset as in the slides.
+
+3. Obtain a pre-trained model of your choice as explained in the slides.
+
+Assignment Tasks:
+
+Task 1: Your own CNN architectures:
+
+Build two different CNN architectures to make a meaningful comparison (for example, with and without pooling, with and without dropout, different image sizes, varying the number of filters or their sizes, etc.). Train each model till the training accuracy does not seem to improve over epochs and measure their accuracy on the test set. Save both the models in files.
+
+Task 2: Fine-tuning a pre-trained CNN architecture:
+
+Fine-tune a pre-trained architecture of your choice. Train the model till the training accuracy does not seem to improve over epochs and measure its  accuracy on the test set.
+
+Task 3: Error Analysis:
+
+Obtain at least 10 human emotion images on your own (take photos or search on the internet). They could be all from one category or from more categories. Test each image using the best model of Task 1 and the model of Task 2 (you can use your saved models). Qualitatively see what images the models get incorrect, and if there could be any reasons behind that.
+
+Submission:
+
+1. [2 points] The Python program .py file in which you wrote your program (do not submit work saved from the Python prompt). The program should be self-contained. The user should be able to run the program and generate the results by importing the file.
+
+2. [1 point] The saved .keras models from Task 1. No need to submit the fine-tuned model.
+
+3. A short report (pdf file) that includes:  
+
+Task 1:
+
+(i) [0.5 point] Describe or draw the two CNN architectures you used for Task 1.
+
+(ii) [0.5 point] For each model, show in a table how training accuracy changed over epochs.
+
+(iii) [1 point] Show test accuracy for each model in a table.
+
+(iv) [0.5 point] Write some comments on the results comparing the two models.
+
+Task 2:
+
+(i) [0.5 points] Mention which pre-trained model you used and what is its size, and what layer(s) you added on top of it.
+
+(ii) [0.5 points] Show in a table how training accuracy changed over epochs.
+
+(iii) [1 points] Show the test accuracy of the fine-tuned model and the better model of Task 1 in a table.
+
+(iv) [0.5 points] Write some comments on the results comparing the fine-tuned model and the better model of Task 1.
+
+Task 3:
+
+(i) [1 point] Include the 10 images in the report along with their correct classes, predicted classes by the better model of Task 1, and predicted classes by the fine-tuned model.
+
+(ii) [1 point] Give possible qualitative reasons why the better model of Task 1 may be making errors, and possible qualitative reasons why the fine-tuned model may or may not be correcting those errors.
+
+Note: There are not enough examples in the dataset considering the difficulty of the task, hence high testing accuracies is not an expectation for this assignment. But they should be well above the accuracy of random classification.
+
+Late penalty: There will be 1 point deducted for every hour of late submission.
+
+Note: You can discuss the assignment with other students but your submitted code and report must be your own work. Any instance of copied work will count as an academic misconduct and may lead to a straight F in the course.

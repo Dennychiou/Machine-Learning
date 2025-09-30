@@ -1,0 +1,44 @@
+In this assignment you will use scikit-learn (sklearn) library to compare different machine learning methods for classification.
+
+Set up:
+
+1.  Please go through A2.pptx slides. 
+
+2. Choose two datasets for classification from OpenML (https://www.openml.org/search?type=data). Each dataset must satisfy the following (use "Filter results" button in OpenML to help you select datasets):
+
+Nominal target (i.e. classification; could be two or more classes).
+At least one categorical (nominal) feature.
+At least 1000 examples (or instances).
+Avoid a dataset with very large number of examples (e.g. 100,000) or very large number of features. Do not use a dataset with missing features or with too many features relative to the number of examples.
+Task:
+
+Obtain 10-fold cross-validation results using the following methods. Tune the parameters (using at least 5 values) mentioned below, if any, using the GridSearchCV method described in the  slides. You can keep everything else default in the methods. If the task is binary classification then optimize for "roc_auc", if there are more than two classes then optimize for "roc_auc_ovr_weighted". Report mean and standard deviation of AUC (or weighted AUC) across the 10 folds obtained using cross_val_score.
+
+DecisionTreeClassifier in sklearn.tree
+Tune min_samples_leaf
+KNearestNeighborsClassifier in sklearn.neighbors
+Tune n_neighbors
+MultiNomialNB in sklearn.naive_bayes
+LogisticRegression in sklearn.linear_model
+DummyClassifier from sklearn.dummy (as a baseline; it predicts the most frequent class)
+Submission:
+
+Submit the following:
+
+1. [2 points] The Python program .py file in which you wrote your program (do not submit work saved from the Python prompt). It should include calling each of the above methods for generating results of cross-validation. The program should include loading the data step as well. The program should be self-contained. The user should be able to run the program and generate all the results by importing the file.
+
+2. A short report (in pdf file) that includes:
+
+[4 points] For Dataset 1:
+[0.5 point] A brief description of the dataset (what is the task, what are the features and the target)
+[0.5 point] Describe the parameters you tuned and with what values
+[2.5 points] A table showing means and standard deviations of the cross-validation results of all the methods
+[0.5 point] Discussion of the results
+[4 points] For Dataset 2:
+[0.5 point] A brief description of the dataset (what is the task, what are the features and the target)
+[0.5 point] Describe the parameters you tuned and with what values
+[2.5 points] A table showing means and standard deviations of the cross-validation results of all the methods
+[0.5 point] Discussion of the results
+Late penalty: There will be 1 point deducted for every hour of late submission (i.e. if you are 1 minute late, the penalty will be 1 point; if you are 1 hour and 1 minute late, the penalty will be 2 points and so on).
+
+Note: You can discuss the assignment with other students but your submitted code and report must be your own work. Any instance of copied work, including from internet resources, will count as an academic misconduct and may lead to a straight F in the course.

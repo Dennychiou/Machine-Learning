@@ -1,0 +1,43 @@
+In this assignment you build neural networks for regression using Keras library.
+
+Please start working on this assignment early to avoid last minute rush, it may take time to install things as well as to train neural networks.
+
+Setup:
+
+1. Go through A3.pptx slides and install the libraries. Try the code from the slides and make sure you understand it.
+
+2. Choose two regression datasets from OpenML. You cannot use the dataset already used in A3.pptx slides. You can use a dataset from your previous assignments.
+
+Each dataset must have at least 1000 examples.
+Avoid a dataset with too many examples (e.g. millions) otherwise it will take too much computational time.
+Avoid a dataset with too many features compared to the number of examples otherwise the training will not go well.
+Handle nominal features, if any, as in the previous assignment.
+Either avoid a dataset with missing feature values or handle them as in the Data Exploration slides.
+Do not use any image or text dataset.
+Assignment Task:
+
+For each of the two datasets:
+
+Build three different neural network models using Keras with the following architectures (each with only one hidden layer):
+
+One hidden layer with very few nodes
+One hidden layer with reasonable number of nodes 
+One hidden layer with too many nodes
+It is up to you to choose the exact number of nodes. Use only Dense layers in each network. Divide the data into training, validation and test sets as in the slides. For each model, plot the training errors and validation errors with the number of epochs. For a model, if the training error has not plateaued then increase the number of epochs. If training error has plateaued but validation error has started increasing then note the number of epochs with the lowest validation error, then create a new model and train it with the entire training data (including validation part) with that many epochs. Test the trained model on the test data.
+
+Submission:
+
+1. [3 points] The Python program .py file in which you wrote your program (do not submit work saved from the Python prompt). The program should include loading the data step as well. The program should be self-contained. The user should be able to run the program and generate the results by importing the file.
+
+2. A short report (pdf file) that includes:
+
+For each of the two datasets:
+
+A brief description of  dataset. Mention if it had nominal features or missing values and how you handled them. [0.5 points] 
+Description or figure of the three architectures you tried. [0.5 points]
+The three graphs, one for each model, showing training and validation error with epochs (show the graph with maximum number of epochs you tried). [1.5 points]
+A table of test errors (in mse) using the three models. [0.5 points]
+Discussion of the results. [0.5 points] 
+Late penalty: There will be 1 point deducted for every hour of late submission (i.e. if you are 1 minute late, the penalty will be 1 point; if you are 1 hour and 1 minute late, the penalty will be 2 points and so on).
+
+Note: You can discuss the assignment with other students but your submitted code and report must be your own work. Any instance of copied work, including from internet resources, will count as an academic misconduct and may lead to a straight F in the course.
