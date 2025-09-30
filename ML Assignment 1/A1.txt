@@ -1,0 +1,40 @@
+In this assignment you will use scikit-learn (sklearn) library to evaluate decision trees with different parameter values.
+
+Setup:
+
+1. Please go through A1.pptx slides.  If needed, go over IDLE.pptx slides.
+
+2. Choose any two datasets from OpenML (https://www.openml.org/search?type=data). Each must have:
+
+Binary nominal target (i.e. binary classification task)
+Use "Filter results" button on the top right corner of the OpenML web page and select Target -> Binary classification
+All numeric features (sklearn decision trees do not directly handle nominal features)
+Use "Sort results" button on the top right corner and select Numeric Features (top ones will be all numeric features; verify it)
+Do not use a dataset with missing features or with too many features relative to the number of examples
+At least 1000 examples
+Use "Filter results" and select Instances -> 1000s
+Tasks:
+
+Separately on each dataset, vary the value of min_samples_leaf parameter and measure test roc_auc scores using 10-fold cross-validation. Use "entropy" as the decision tree induction criterion.
+
+Plot the results on a graph with the parameter values on the x-axis and test AUC scores on the y-axis (no need to plot training scores). Use enough range of the parameter values to get overfitting and underfitting (but at least 5 different values). Point out the regions of overfitting and underfitting on this graph.
+For the parameter value that gave you the best AUC in the previous graph, plot the entire ROC curve.
+Submission:
+
+1. [2 points] The Python program .py file in which you wrote your program (do not submit work saved from the Python prompt). The program should include loading the data step as well. The program should be self-contained. The user should be able to run the program and generate all the results by importing the file.
+
+2. A short report (pdf file) that includes:
+
+[4 points] For Dataset 1:
+[0.5 point] A brief description of the dataset (what is the task, what are the features and the target)
+[2 points] Graph of AUC values, describing the regions of overfitting and underfitting
+[1 point] ROC curve
+[0.5 point] Discussion of the results
+[4 points] For Dataset 2:
+[0.5 point] A brief description of the dataset (what is the task, what are the features and the target)
+[2 points] Graph of AUC values, describing the regions of overfitting and underfitting
+[1 point] ROC curve
+[0.5 point] Discussion of the results
+Late penalty: There will be 1 point deducted for every hour of late submission (i.e. if you are 1 minute late, the penalty will be 1 point; if you are 1 hour and 1 minute late, the penalty will be 2 points and so on).
+
+Note: You can discuss the assignment with other students but your submitted code and report must be your own work. Any instance of copied work, including from internet resources, will count as an academic misconduct and may lead to a straight F in the course.
