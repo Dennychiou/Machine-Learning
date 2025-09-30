@@ -1,7 +1,7 @@
 # 使用 Scikit-Learn 進行決策樹 AUC 分析
 選擇兩個合適的資料(從openML選取)，用決策樹分析調整min_samples_leaf並且做10-fold cross-validation，畫出AUC vs min_samples_leaf，找出最佳參數後畫出ROC curve，最後觀察過擬和與欠擬和的情況。
 ## 內容
-* 針對不同的資料集 ID:1460、ID:45022，分別為Data1.py以及Data2.py
+* 針對不同的資料集 ID:1460、ID:45022，分別為A1Data1.py以及A1Data2.py
 * 訓練不同值的min_samples_leaf
 * 使用10-fold cv評估模型
 * AUC圖
