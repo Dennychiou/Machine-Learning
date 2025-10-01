@@ -25,4 +25,4 @@
 5. 找出最佳參數後，畫 ROC curve
 ## 執行環境
 * Python版本需為3.12以上
-* 於 Windows Powershell中安裝指令套件 (pip install –U scikit-learn)、(pip install pandas)、(pip install matplotlib)
+* 於 Windows Powershell中安裝指令套件 (pip install scikit-learn openml pandas numpy matplotlib)
