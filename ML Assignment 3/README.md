@@ -6,8 +6,8 @@
 * 觀察訓練與驗證誤差曲線
 * 評估測試集 MSE
 * 以表格形式輸出結果
-1.Dataset 1：(data_id=287)
-2.Dataset 2：(data_id=503)
+1. Dataset 1：(data_id=287)
+2. Dataset 2：(data_id=503)
 # 資料前處理流程
 ## 處理步驟：
 * 將目標值轉為 2D array
